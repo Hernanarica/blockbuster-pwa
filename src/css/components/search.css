@@ -1,0 +1,15 @@
+.search {
+	display: flex;
+	margin-left: auto;
+}
+
+.search__input {
+	border-top-left-radius: 0.5rem;
+	border-bottom-left-radius: 0.5rem;
+	border: none;
+}
+
+.search button {
+	position: relative;
+	left: -8px;
+}

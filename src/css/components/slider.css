@@ -1,0 +1,122 @@
+.slider {
+	position: relative;
+	border-radius: 0.5rem;
+	overflow: hidden;
+}
+
+.slide {
+	display: flex;
+	gap: 1.5rem;
+	transform: translate3d(0, 0, 0);
+	transition: 350ms;
+	animation: autoplay 18s alternate forwards infinite;
+}
+
+.slide__item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	flex-shrink: 0;
+	inline-size: 100%;
+}
+
+.slide__item img {
+	inline-size: 100%;
+}
+
+.slide__item-actions {
+	display: none;
+}
+
+.pagination {
+	position: absolute;
+	bottom: 0.5rem;
+	left: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	inline-size: 100%;
+	gap: 1rem;
+}
+
+.pagination__item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	inline-size: 0.625rem;
+	block-size: 0.625rem;
+	background-color: var(--grey);
+	text-align: center;
+	transition: 350ms;
+	overflow: hidden;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.pagination__item:hover {
+	transform: scale(1.1);
+	background-color: var(--white);
+}
+
+input[id="1"]:checked ~ .slide {
+	animation: none;
+	transform: translate3d(0, 0, 0);
+}
+
+input[id="1"]:checked ~ .pagination .pagination__item[for="1"] {
+	background-color: var(--white);
+}
+
+input[id="2"]:checked ~ .slide {
+	animation: none;
+	transform: translate3d(calc(-100% - 1.5rem), 0, 0);
+}
+
+input[id="2"]:checked ~ .pagination .pagination__item[for="2"] {
+	background-color: var(--white);
+}
+
+input[id="3"]:checked ~ .slide {
+	animation: none;
+	transform: translate3d(calc(-200% - 3rem), 0, 0);
+}
+
+input[id="3"]:checked ~ .pagination .pagination__item[for="3"] {
+	background-color: var(--white);
+}
+
+@keyframes autoplay {
+	33% {
+		transform: translate3d(0, 0, 0);
+	}
+	
+	66% {
+		transform: translate3d(calc(-100% - 1.5rem), 0, 0);
+	}
+	
+	100% {
+		transform: translate3d(calc(-200% - 3rem), 0, 0);
+	}
+}
+
+@media screen and (min-width: 767px) {
+	.slide__item-actions {
+		position: absolute;
+		bottom: 1.5625rem;
+		left: 1.5625rem;
+		display: flex;
+		gap: 1rem;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.pagination {
+		bottom: 1.25rem;
+	}
+	
+	.pagination__item {
+		inline-size: 1rem;
+		block-size: 1rem;
+	}
+}

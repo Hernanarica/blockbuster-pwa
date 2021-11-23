@@ -1,0 +1,83 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+	padding: 1.8125rem;
+	border-radius: 1.625rem;
+	max-inline-size: 290px;
+	inline-size: 100%;
+	background-color: var(--white);
+	color: var(--grey-100);
+}
+
+.card--active {
+	background-color: var(--primary);
+	color: var(--black);
+}
+
+.card [class*="title"],
+.card [class*="paragraph"],
+.card [class*="text"] {
+	margin: 0;
+}
+
+.card__price {
+	color: var(--black);
+	font: var(--headline-4);
+}
+
+.card__price-month {
+	font: var(--body-1-regular);
+}
+
+.card__description-title {
+	color: var(--black);
+	font: var(--headline-4);
+}
+
+.card__description-paragraph {
+	font: var(--body-1-regular);
+}
+
+.card__benefits {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.card__benefit {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.card__benefit-text {
+	font: var(--body-2-regular);
+}
+
+.card__benefit--disabled {
+	color: var(--black);
+	opacity: 0.8;
+}
+
+.card--shadow {
+	box-shadow: 0px 42px 34px rgba(82, 67, 194, 0.295755);
+}
+
+@media screen and (min-width: 1279px) {
+	.card {
+		padding: 0;
+		border-radius: 0;
+		block-size: fit-content;
+	}
+	
+	.card {
+		background-color: transparent;
+	}
+	
+	.card--active {
+		background-color: var(--primary);
+		padding: 1.8125rem;
+		border-radius: 1.625rem;
+	}
+}

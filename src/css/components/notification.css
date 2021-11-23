@@ -1,0 +1,64 @@
+.notification {
+   display: flex;
+   align-items: center;
+   gap: 0.5rem;
+   inline-size: 100%;
+   margin-block-end: 1rem;
+   padding-inline: 0.75rem;
+   padding-block: 0.6875rem;
+   border-radius: 0.5rem;
+   color: white;
+   font: var(--body-2-bold);
+   z-index: 1;
+}
+
+.notification--float {
+   position: fixed;
+   inline-size: fit-content;
+   top: 25px;
+   left: 0;
+   padding-inline-end: 2rem;
+   max-inline-size: 600px;
+   opacity: 0;
+   will-change: opacity;
+   z-index: 3;
+   overflow: hidden;
+}
+
+.notification--ellipsis p {
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+
+.notification--alert {
+   background-color: var(--danger);
+}
+
+.notification--success {
+   background-color: var(--success);
+}
+
+.notification i {
+   color: var(--white);
+}
+
+.notification > * {
+   margin: 0;
+}
+
+@media screen and (min-width: 600px) {
+   .notification--float {
+      left: 25px;
+   }
+}
+
+@media screen and (min-width: 1200px) {
+   .notification {
+      inline-size: 100%;
+   }
+
+   .notification--short {
+      inline-size: fit-content;
+   }
+}

@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./src/css/index.css">
+		<link rel="stylesheet" href="./src/css/offline.css">
+		<link rel="stylesheet" href="./game/styles.css">
+		<title>Hernán Arica | Cátedra PWA</title>
+	</head>
+	<body>
+		<header class="header">
+			<div class="header__wrapper wrapper">
+				<h1 class="header__title">
+					Blockbuster
+					<a href="/" aria-label="ir al home">
+						<picture class="header__title-image">
+							<source media="(min-width: 855px)" srcset="./src/assets/imgs/logo-desk.png"/>
+							<img src="./src/assets/imgs/logo-mob.png" alt="Blockbuster" width="214" height="128"/>
+						</picture>
+					</a>
+				</h1>
+				<div class="header__navigation">
+					<input type="checkbox" id="check-menu-icon" name="check-menu-icon">
+					<label for="check-menu-icon" aria-label="botón de menú">
+						<i class="icon__menu" aria-hidden="true"></i>
+					</label>
+					<nav class="navigation">
+						<ul class="navigation__list">
+							<li class="navigation__item">
+								<a href="index.html" aria-label="Ir a todas las películas" class="navigation__link navigation__link--active">Todas</a>
+							</li>
+							<li class="navigation__item">
+								<a href="./planes.html" aria-label="Ir a nuestros planes" class="navigation__link navigation__link--active">Nuestros planes</a>
+							</li>
+							<li class="navigation__item">
+								<a href="./favoritos.html" aria-label="Ir a próximos estrenos" class="navigation__link navigation__link--active">Mis favoritos</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main id="root">
+			<p class="paragraph">No hay conexión a internet, pero diviértete jugando un poco</p>
+			<div id="board">
+				<div id="background">
+					<div id="scoreContainer">
+						Score: <span id="score">0</span>
+					</div>
+				</div>
+				<div id="player">
+					<img src="./game/assets/player.png" alt="player dino">
+				</div>
+				<div id="cactus" class="animatedCactus">
+					<img src="./game/assets/captus.png" alt="obstacle">
+				</div>
+			</div>
+			<div class="menu">
+				<button id="button-flow" class="button"></button>
+			</div>
+		</main>
+		<footer class="footer">
+			<p>Estas en modo offline</p>
+		</footer>
+		<script src="js/register-sw.js"></script>
+		<script src="js/main.js"></script>
+		<script src="./game/scripts.js"></script>
+	</body>
+</html>

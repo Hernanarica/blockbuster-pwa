@@ -1,0 +1,10 @@
+.preview {
+   padding-block: 1rem;
+   text-align: center;
+}
+
+.preview__image {
+   inline-size: 100%;
+   vertical-align: middle;
+   max-inline-size: 28.25rem;
+}

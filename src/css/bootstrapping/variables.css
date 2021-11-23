@@ -1,0 +1,28 @@
+:root {
+	--font-base-1: Montserrat, sans-serif;
+	--font-base-2: Inter, sans-serif;
+	--headline-5: 700 1rem/normal var(--font-base-2);
+	--headline-4: 700 1.5625rem/normal var(--font-base-1);
+	--headline-3: 700 1.75rem/normal var(--font-base-2);
+	--headline-2: 700 2.875rem/3.5rem var(--font-base-1);
+	--headline-1: 700 3rem/3.625rem var(--font-base-1);
+	--body-1-regular: normal 1.125rem/1.6875rem var(--font-base-1);
+	--body-1-bold: bold 1.125rem/1.6875rem var(--font-base-1);
+	--body-2-regular: normal 1rem/1.375rem var(--font-base-1);
+	--body-2-bold: bold 1rem/1.1875rem var(--font-base-1);
+	--button: 700 1.125rem/1.75rem var(--font-base-1);
+	--caption: normal 0.75rem/1.375rem var(--font-base-1);
+	--menu-link: 700 1rem/1.1875rem var(--font-base-2);
+	--primary: #FED941;
+	--white: #FFFFFF;
+	--grey: #A7A9BE;
+	--danger: #DC2626;
+	--danger-dark: #7A1515;
+	--danger-light: #FECACA;
+	--success: #059669;
+	--success-light: #d1fae5;
+	--grey-100: #52566F;
+	--green: #065f46;
+	--black: #000000;
+	--background: #0F0E17;
+}

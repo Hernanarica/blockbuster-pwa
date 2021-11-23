@@ -1,0 +1,72 @@
+.users__table {
+	color: white;
+	border-collapse: collapse;
+	inline-size: 100%;
+}
+
+.users__table-header {
+	position: sticky;
+	top: 0;
+	background-color: var(--primary);
+	color: var(--black);
+	font: var(--body-1-bold);
+}
+
+.users__table-item {
+	padding-block: 0.4375rem;
+	padding-inline: 0.75rem;
+	text-align: left;
+}
+
+.user__content {
+	padding: 0.75rem;
+}
+
+.user__details {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.user__image {
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.user__info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.user__name,
+.user__lastname {
+	font: var(--body-2-bold);
+}
+
+.user__email {
+	font: var(--caption);
+}
+
+.user__status {
+	padding-inline: 0.625rem;
+	padding-block: 0.3125rem;
+	font: var(--caption);
+	font-weight: 700;
+	border-radius: 0.5rem;
+}
+
+.user__status--active {
+	background-color: var(--success-light);
+	color: var(--green);
+}
+
+.user__status--disabled {
+	background-color: var(--danger-light);
+	color: var(--danger-dark);
+}
+
+.user__plan,
+.user__role {
+	font: var(--body-2-bold);
+}

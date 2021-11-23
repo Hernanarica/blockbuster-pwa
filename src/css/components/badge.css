@@ -1,0 +1,36 @@
+.badge {
+	padding-block: 0.375rem;
+	padding-inline: 0.75rem;
+	border-radius: 0.5rem;
+	background-color: var(--white);
+	color: var(--black);
+	font: var(--body-2-bold);
+}
+
+.badge--selected {
+	cursor: pointer;
+}
+
+.badge--active {
+	background-color: var(--primary);
+	color: var(--black);
+}
+
+.badge--disabled {
+	background-color: var(--black);
+	color: var(--primary);
+}
+
+.badge > input:checked .badge {
+	color: crimson;
+}
+
+@media screen and (min-width: 1200px) {
+	.panel__table-item:nth-child(5) .badge {
+		margin-bottom: 0.3125rem;
+	}
+	
+	.panel__table-item:nth-child(5) .badge:last-child {
+		margin-bottom: 0;
+	}
+}

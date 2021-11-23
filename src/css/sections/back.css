@@ -1,0 +1,9 @@
+.back-section {
+   padding-block: 1.5rem;
+}
+
+@media screen and (min-width: 1279px) {
+   .back-section {
+      padding: 0;
+   }
+}

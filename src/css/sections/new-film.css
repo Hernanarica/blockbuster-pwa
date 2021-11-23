@@ -1,0 +1,124 @@
+.new-film {
+	padding: 1.5rem;
+}
+
+.new-film__form-field-title {
+	color: var(--white);
+	font: var(--body-2-bold);
+}
+
+.new-film__form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+	block-size: 100%;
+	max-inline-size: 31.25rem;
+	margin: 0 auto;
+}
+
+.new-film__form-content {
+	display: flex;
+	gap: 1rem;
+	inline-size: 100%;
+}
+
+#upload-poster {
+	display: flex;
+	flex-direction: column;
+}
+
+.new-film__form-content > .new-film__field-container {
+	flex: 1;
+}
+
+.new-film__form-content:nth-of-type(1) {
+	flex-direction: column;
+}
+
+.new-film__form-content:nth-of-type(3) {
+	flex-direction: column;
+}
+
+.new-film__form-content:nth-of-type(4) {
+	flex-direction: column;
+}
+
+.new-film__form-content:nth-of-type(5) {
+	flex-direction: column;
+}
+
+.new-film__form-content:nth-of-type(6) {
+	flex-direction: column;
+}
+
+.new-film__form-fix {
+	flex-direction: column;
+}
+
+.new-film__field-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+
+.new-film__form-field,
+.new-film__description {
+	display: block;
+	padding-inline: 0.75rem;
+	padding-block: 0.6875rem;
+	border-radius: 0.5rem;
+	border: 0.125rem solid var(--primary);
+	inline-size: 100%;
+	font: var(--body-2-regular);
+}
+
+.new-film__form-field::placeholder,
+.new-film__description::placeholder {
+	color: var(--grey);
+}
+
+.new-film__description {
+	block-size: 9.375rem;
+	resize: none;
+}
+
+.register__upload-file {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 0.5rem;
+	padding-inline: 0.75rem;
+	padding-block: 0.6875rem;
+	border-radius: 0.5rem;
+	inline-size: 100%;
+	font: var(--button);
+	cursor: pointer;
+}
+
+@media screen and (min-width: 767px) {
+	.new-film__form {
+		max-inline-size: 700px;
+		padding: 0;
+	}
+	
+	.new-film__form-content:nth-of-type(1) {
+		flex-direction: initial;
+	}
+	
+	.new-film__form-content:nth-of-type(4) {
+		flex-direction: initial;
+	}
+	
+	.new-film__field-container {
+		min-inline-size: 342px;
+	}
+}
+
+@media screen and (min-width: 1365px) {
+	.new-film {
+		padding: 0;
+	}
+}

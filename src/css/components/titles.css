@@ -1,0 +1,17 @@
+.form__title {
+	color: var(--white);
+	font: var(--headline-4);
+	margin: 0 0 1rem 0;
+}
+
+@media screen and (min-width: 767px) {
+	.form__title {
+		font: var(--headline-3);
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.form__title {
+		margin-top: 1rem;
+	}
+}

@@ -1,0 +1,17 @@
+.scroll-top {
+   position: fixed;
+   right: 20px;
+   bottom: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   inline-size: 40px;
+   block-size: 40px;
+   background-color: var(--primary);
+   color: var(--black);
+   border-radius: 50%;
+   font: var(--button);
+   cursor: pointer;
+   transition: 500ms;
+   transform: scale(0);
+}

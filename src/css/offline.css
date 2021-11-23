@@ -1,0 +1,10 @@
+:root {
+	--primary: #FFFFFF;
+	--background: #DC2626;
+}
+
+.footer {
+	padding: 1rem;
+	text-align: center;
+	color: white;
+}

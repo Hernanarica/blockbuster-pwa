@@ -1,0 +1,45 @@
+.btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 0.5rem;
+   max-block-size: 3rem;
+   block-size: 100%;
+   inline-size: 100%;
+   padding-inline: 1.5rem;
+   padding-block: 0.625rem;
+   border: 0.0625rem solid transparent;
+   border-radius: 0.25rem;
+   color: var(--black);
+   font: var(--button);
+   text-decoration: none;
+   cursor: pointer;
+}
+
+.btn--shrink {
+   inline-size: fit-content;
+}
+
+.btn--active {
+   background-color: var(--primary);
+}
+
+.btn--outline {
+   border-color: var(--primary);
+   color: var(--primary);
+   background-color: var(--black);
+}
+
+.btn-notification {
+   position: absolute;
+   top: 0.1875rem;
+   right: 0.1875rem;
+   border: none;
+   background-color: transparent;
+   color: var(--white);
+   cursor: pointer;
+}
+
+.btn-notification > i {
+   vertical-align: middle;
+}

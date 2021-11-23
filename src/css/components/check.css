@@ -1,0 +1,24 @@
+.genres {
+	color: var(--white);
+}
+
+.genres fieldset {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.625rem;
+	padding: 1rem;
+	border-radius: 0.5rem;
+	border-color: var(--primary);
+}
+
+.genres legend {
+	padding: 0.625rem;
+}
+
+.genres__title {
+	font: var(--body-2-bold);
+}
+
+.genres input {
+	display: none;
+}

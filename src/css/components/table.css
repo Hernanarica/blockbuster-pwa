@@ -1,0 +1,128 @@
+.panel__table {
+   inline-size: 100%;
+   border-collapse: collapse;
+}
+
+.panel__table-header {
+   position: sticky;
+   top: 0;
+   background-color: var(--primary);
+   color: var(--black);
+   font: var(--body-1-bold);
+}
+
+.panel__table-body {
+   font: var(--body-2-regular);
+}
+
+.panel__table-body .panel__table-item:nth-child(7) {
+   overflow: hidden;
+}
+
+.panel__table-body .panel__table-item:nth-child(7) img {
+   border-radius: 8px;
+}
+
+.panel__table-head {
+   padding-block: 0.625rem;
+   padding-inline: 0.75rem;
+}
+
+.panel__table-header .panel__table-head:last-child {
+   inline-size: fit-content;
+}
+
+.panel__table-item {
+   padding: 0.5rem;
+   text-align: left;
+}
+
+.panel__table-actions {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+
+.panel__table-item:nth-child(5) .badge {
+   display: inline-block;
+}
+
+.panel__table-item:nth-of-type(6) img {
+   border-radius: 0.5rem;
+}
+
+.panel__table-item span {
+   display: none;
+}
+
+.form-delete {
+   inline-size: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+   .panel__table-header {
+      display: none;
+   }
+
+   .panel__table-body {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+   }
+
+   .panel__table .panel__table-row {
+      display: flex;
+      flex-direction: column;
+      block-size: fit-content;
+   }
+
+   .panel__table-row {
+      max-inline-size: 25rem;
+      inline-size: 100%;
+      padding: 1rem;
+      border: 0.0625rem solid var(--grey-100);
+      border-radius: 0.5rem;
+   }
+
+   .panel__table-item {
+      padding: 0.5rem;
+   }
+
+   .panel__table-item:nth-child(5) {
+      display: flex;
+      align-items: center;
+      gap: 0.625rem;
+   }
+
+   .panel__table-item > span {
+      display: inline-block;
+   }
+
+   .panel__table-item:nth-of-type(6) {
+      text-align: center;
+      overflow: hidden;
+   }
+
+   .panel__table-item:nth-of-type(6) img {
+      vertical-align: middle;
+      max-inline-size: 220px;
+      inline-size: 100%;
+   }
+
+   .panel__table-actions {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+   }
+}
+
+@media screen and (min-width: 1299px) {
+   .panel__table-actions {
+      flex-direction: row;
+   }
+}

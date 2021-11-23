@@ -1,0 +1,39 @@
+/* initialize files */
+@import "./bootstrapping/bootstrapping.css";
+
+/* wrappers files */
+@import "./wrappers/wrapper.css";
+
+/* components files */
+@import "./components/header.css";
+@import "./components/footer.css";
+@import "./components/slider.css";
+@import "./components/actions-button.css";
+@import "./components/ranking.css";
+@import "./components/card.css";
+@import "./components/notification.css";
+@import "./components/table.css";
+@import "./components/users-table.css";
+@import "./components/preview.css";
+@import "./components/scroll-bar.css";
+@import "./components/avatar.css";
+@import "./components/badge.css";
+@import "./components/check.css";
+@import "./components/ellipsis.css";
+@import "./components/scroll-top.css";
+@import "components/titles.css";
+@import "components/search.css";
+
+/* sections files */
+@import "./sections/main-home.css";
+@import "./sections/login.css";
+@import "./sections/register.css";
+@import "./sections/films.css";
+@import "./sections/panel.css";
+@import "sections/new-film.css";
+@import "./sections/back.css";
+@import "./sections/our-plans.css";
+@import "./sections/premieres.css";
+@import "./sections/detail.css";
+@import "./sections/profile.css";
+@import "./sections/users.css";

@@ -1,0 +1,9 @@
+main {
+   background-color: var(--background);
+}
+
+.main__home-section {
+   display: flex;
+   flex-direction: column;
+   gap: 3.5rem;
+}
