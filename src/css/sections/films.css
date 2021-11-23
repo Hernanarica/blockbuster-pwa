@@ -21,6 +21,11 @@
 	font: var(--headline-4);
 }
 
+.films-title {
+	color: var(--white);
+	font: var(--headline-5);
+}
+
 .film__item {
 	position: relative;
 	overflow: hidden;
@@ -46,5 +51,15 @@
 @media screen and (min-width: 767px) {
 	.films__title {
 		font: var(--headline-1);
+	}
+
+	.films-title {
+		font: var(--headline-4);
+	}
+}
+
+@media screen and (min-width: 1279px) {
+	.films-container {
+		min-block-size: calc(100vh - 7rem);
 	}
 }

@@ -12,15 +12,18 @@ const filmsServices = {
 		let set = new Set(data.Search.map(JSON.stringify));
 		films   = Array.from(set).map(JSON.parse);
 		
-		const favorites = storageServices.getData('films').map(film => film.imdbID);
-		// 	// Sacamos los que ya tenemos en favoritos
-		for (let i = 0; i < films.length; i++) {
-			for (let j = 0; j < favorites.length; j++) {
-				if (films[i].imdbID === favorites[j]) {
-					films[i].addFavorite = true;
+		if (storageServices.getData('films')) {
+			const favorites = storageServices.getData('films').map(film => film.imdbID);
+			// 	// Sacamos los que ya tenemos en favoritos
+			for (let i = 0; i < films.length; i++) {
+				for (let j = 0; j < favorites.length; j++) {
+					if (films[i].imdbID === favorites[j]) {
+						films[i].addFavorite = true;
+					}
 				}
 			}
 		}
+		
 		
 		return films;
 	},
@@ -32,16 +35,19 @@ const filmsServices = {
 		const res   = await fetch(`${ API }?apikey=${ API_KEY }&s=${ filmWanted }`);
 		const data  = await res.json();
 		const films = await data.Search;
-
-		const favorites = storageServices.getData('films').map(film => film.imdbID);
-		// 	// Sacamos los que ya tenemos en favoritos
-		for (let i = 0; i < films.length; i++) {
-			for (let j = 0; j < favorites.length; j++) {
-				if (films[i].imdbID === favorites[j]) {
-					films[i].addFavorite = true;
+		
+		if (storageServices.getData('films')) {
+			const favorites = storageServices.getData('films').map(film => film.imdbID);
+			// 	// Sacamos los que ya tenemos en favoritos
+			for (let i = 0; i < films.length; i++) {
+				for (let j = 0; j < favorites.length; j++) {
+					if (films[i].imdbID === favorites[j]) {
+						films[i].addFavorite = true;
+					}
 				}
 			}
 		}
+		
 		
 		return films;
 	}

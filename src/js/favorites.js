@@ -7,8 +7,15 @@ const films               = storageServices.getData('films');
 renderFilms(films);
 
 function renderFilms(films) {
-	films.forEach(item => {
-		$favoritesContainer.innerHTML += `
+	if (storageServices.getData('films')) {
+		if (storageServices.getData('films').length === 0) {
+			$favoritesContainer.innerHTML = '<h2 class="films-title">No hay películas disponibles</h2>';
+		} else {
+			$favoritesContainer.innerHTML = '';
+		}
+		
+		films.forEach(item => {
+			$favoritesContainer.innerHTML += `
 			<div>
 				<a href="/" aria-label="film.Title" class="film__link" data-id="${ item.imdbID }">
 					<article class="film__item">
@@ -22,9 +29,10 @@ function renderFilms(films) {
 				</button>
 			</div>
 		`;
-	});
-	
-	removeFavorites();
+		});
+		
+		removeFavorites();
+	}
 }
 
 function renderDetailFilm(elem, id) {
