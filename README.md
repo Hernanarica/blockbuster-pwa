@@ -1,2 +1,2 @@
-# service-worker-ejemplo
- Ejemplo de Service Worker
+# Blockbuster PWA
+Una aplicación PWA de blockbuster
