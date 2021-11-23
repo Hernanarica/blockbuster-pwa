@@ -15,6 +15,17 @@
 
 .header__title {
 	font-size: 0;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+}
+
+.header__title span {
+	font-size: 1rem;
+	background-color: var(--success);
+	color: var(--white);
+	font-weight: 600;
+	font-family: 'Roboto', sans-serif;
 }
 
 .header__title-image {
@@ -122,12 +133,12 @@
 		padding-block: 1.5rem;
 		padding-inline: 1rem;
 	}
-	
+
 	.header__title-image img {
 		inline-size: 6.6875rem;
 		block-size: 4rem;
 	}
-	
+
 	.navigation {
 		position: initial;
 		top: 0;
@@ -138,7 +149,7 @@
 		inline-size: initial;
 		opacity: initial;
 	}
-	
+
 	.navigation__list {
 		display: flex;
 		flex-direction: initial;
@@ -147,17 +158,17 @@
 		gap: 1.5rem;
 		block-size: initial;
 	}
-	
+
 	.navigation__link {
 		color: var(--white);
 		text-decoration: none;
 	}
-	
+
 	.navigation__link--active:hover {
 		color: var(--primary);
 		text-decoration: underline;
 	}
-	
+
 	.header__navigation label[for="check-menu-icon"] {
 		display: none;
 	}
