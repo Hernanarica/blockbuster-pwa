@@ -14,30 +14,3 @@ window.addEventListener("online", (event) => {
 if (!navigator.onLine) {
 	console.log("estoy sin conexion!!");
 }
-
-// function traerContenido() {
-// 	fetch("https://www.scorebat.com/video-api/v1/")
-// 		 .then(function (response) {
-// 			 console.log(response);
-//
-// 			 return response.json();
-// 		 }).then(function (responseJson) {
-// 		printResultados(responseJson);
-// 	})
-// 		 .catch(function (error) {
-// 			 console.log('Fallo!');
-// 		 });
-// };
-//
-// function printResultados(data) {
-// 	var container = document.getElementById('main-container');
-// 	var i;
-// 	var results   = "";
-// 	for (i = 0; i < data.length; i++) {
-// 		results += `<p><img src="${ data[i].thumbnail }"/><br /><a href="${ data[i].url }" target="_blank">${ data[i].title }</a></p>`;
-// 	}
-//
-// 	container.innerHTML = results;
-// };
-//
-// traerContenido();
