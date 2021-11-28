@@ -81,7 +81,7 @@ function renderDetailFilm(elem, id) {
 				<div class="film__item" tabindex="0" aria-label="Poster de la película">
 				<div class="film__rankin">
 				<i class="icon__star" aria-hidden="true"></i>
-				<span></span>
+				<span>${ data.imdbRating }</span>
 			</div>
 				<img src="${ data.Poster }" alt="${ data.Title }" width="220" height="330"/>
 			</div>
